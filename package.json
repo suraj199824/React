@@ -1,0 +1,31 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is Namaste React by Suraj Gupta",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suraj199824/React.git"
+  },
+  "keywords": [],
+  "author": "Suraj Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suraj199824/React/issues"
+  },
+  "homepage": "https://github.com/suraj199824/React#readme",
+  "devDependencies": {
+    "parcel": "^2.16.1"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
