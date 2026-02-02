@@ -1,29 +1,74 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = React.createElement(
-  "div",
-  { id: "parent" },
-  [
-    React.createElement(
-      "div",
-      { id: "child", key: "child-1" },
-      [
-        React.createElement("h1", { key: "h1-1" }, "This is h1 tag"),
-        React.createElement("h2", { key: "h2-1" }, "This is h2 tag")
-      ]
-    ),
-    React.createElement(
-      "div",
-      { id: "child", key: "child-2" },
-      [
-        React.createElement("div", { id: "title", key: "title" }, "Namaste React!!"),
-        React.createElement("h1", { key: "h1-2" }, "This is h1 tag"),
-        React.createElement("h2", { key: "h2-2" }, "This is h2 tag")
-      ]
-    )
-  ]
-);
+// // Headers
+// - Logo
+// - NavItems
+// // Body
+// - Search
+// - RestaurantContainer
+// - RestaurantCard
+// // Footer
+// - copyright
+// - links
+// - address
+// - contact info
+
+const Headers = () => {
+  return (
+    <div className="header">
+      <div className="logo-container">
+        <img
+          className="logo"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC3MPOgd6k47rDXQfEKhC4lhmG8lyc6VgR2w&s"
+          alt="logo"
+        />
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+const RestaurantCard = () => {
+  return (
+    <div className="restaurant-card">
+      <img
+        src="https://i.imgur.com/abc123.jpg"
+        alt="logo"
+      />
+      <h3>Meghana Foods</h3>
+    </div>
+  );
+};
+
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">Search</div>
+      <div className="restaurant-container">
+        <RestaurantCard />
+       </div>
+      </div>
+  );
+};
+const AppLayout = () => {
+  return (
+    <div className="app">
+      <Headers />
+      <Body />
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+root.render(<AppLayout />);
+
+
+
