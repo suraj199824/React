@@ -36,14 +36,17 @@ const Headers = () => {
   );
 }
 
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
   return (
-    <div className="restaurant-card">
+    <div className="restaurant-card" style={{backgroundColor: "#f0f0f0"}}>
       <img
-        src="https://i.imgur.com/abc123.jpg"
-        alt="logo"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT66d8jsPBIoaw0xeBZWHL_T9OQPOBJDKeAlg&s"
+        alt="restaurant-logo"
       />
-      <h3>Meghana Foods</h3>
+      <h3>{props.resName}</h3>
+      <h4>{props.cuisine}</h4>
+      <h4>{props.rating}</h4>
+      <h4>{props.deliveryTime}</h4>
     </div>
   );
 };
@@ -53,7 +56,18 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="restaurant-container">
-        <RestaurantCard />
+        <RestaurantCard 
+          resName="Meghana Foods"
+          cuisine="Biryani, North Indian"
+          rating="4.5 ⭐"
+          deliveryTime="30 mins"
+        />
+        <RestaurantCard 
+          resName="Domino's Pizza"
+          cuisine="Italian, Fast Food, Pizza"
+          rating="4.2 ⭐"
+          deliveryTime="25 mins"
+        />
        </div>
       </div>
   );

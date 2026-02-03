@@ -1,3 +1,9 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -25,11 +31,26 @@
 }
 
 .restaurant-card {
-    border: 1px solid black;
+    margin: 6px;
     width: 200px;
-    height: 200px;
-    margin: 10px;
+    height: 400px;
+    overflow: hidden;
 }
+.restaurant-card:hover {
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 5px 5px 15px grey;
+}
+
 .search {
     padding: 10px;
+}
+.restaurant-logo {
+    width: 100%;
+    object-fit: cover;
+}
+.restaurant-container {
+    display: flex;
+    /* gap: 20px; */
+    flex-wrap: wrap;
 }
