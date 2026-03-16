@@ -15,3 +15,29 @@
 - Code Splitting
 - Diagnosic
 - Remove unused code for you
+
+Food App
+
+// // Headers
+ - Logo
+ - NavItems
+// // Body
+ - Search
+ - RestaurantContainer
+- RestaurantCard
+ // Footer
+ - copyright
+ - links
+ - address
+ - contact info
+
+
+ Two types of Export/Import
+
+ Default Export/Import
+ export default component
+ import component from 'path'
+
+ Named Export/Import
+ export const component
+ import {component} from 'path'
