@@ -41,3 +41,9 @@ Food App
  Named Export/Import
  export const component
  import {component} from 'path'
+
+
+ #React hooks
+ (Normal JS utilities functions)
+ - useState() - Superpowerful State Variable in react
+ - useEffect()
