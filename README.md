@@ -31,6 +31,7 @@ Food App
  - address
  - contact info
 
+ Why React is fast because of efficient Virtual DOM manuipulation
 
  Two types of Export/Import
 
