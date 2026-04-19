@@ -48,3 +48,5 @@ Food App
  (Normal JS utilities functions)
  - useState() - Superpowerful State Variable in react
  - useEffect()
+
+Why React is fast because of efficient Virtual DOM manuipulation
